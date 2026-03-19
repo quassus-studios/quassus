@@ -295,6 +295,38 @@ nav {
 .app-card h2 { font-size: 1.4rem; font-weight: 900; color: var(--text); }
 .app-card p { font-size: .78rem; font-weight: 700; color: var(--text3); letter-spacing: .08em; text-transform: uppercase; }
 
+
+/* news card */
+.news-img {
+  width: 100%; aspect-ratio: 16/8;
+  object-fit: cover; display: block;
+  border-radius: 16px 16px 0 0;
+}
+.news-sub {
+  font-size: .93rem !important;
+  font-weight: 700 !important;
+  color: var(--text) !important;
+  margin-bottom: 8px;
+}
+.news-link {
+  color: var(--red); font-weight: 800;
+  text-decoration: none;
+}
+.news-link:hover { text-decoration: underline; }
+.news-btn {
+  display: inline-block;
+  margin-top: 14px;
+  background: var(--red);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: .85rem; font-weight: 800;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: opacity .2s, transform .15s;
+}
+.news-btn:hover { opacity: .88; transform: scale(1.02); }
+
 /* footer */
 footer {
   border-top: 1px solid var(--border);
@@ -482,9 +514,22 @@ footer b { color: var(--red); }
 <!-- NEWS -->
 <div class="page" id="tab-news">
   <div class="page-inner">
-    <div class="empty-card">
-      <svg viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8z"/></svg>
-      <p>There's no news for now.</p>
+    <div class="card news-card">
+      <img
+        src="https://cdn.discordapp.com/attachments/1251168256602017855/1484005007153037483/image.png?ex=69bd4f9d&is=69bbfe1d&hm=f6afdf31e1f8e1c010665772f3149f2f1556adc7a82a30fcd0449dd379fd8234&"
+        alt="Nova Biblioteca de Quassus"
+        class="news-img"
+      />
+      <div class="card-body">
+        <div class="card-tag">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          18 de março de 2026
+        </div>
+        <div class="card-title">Nova Biblioteca de Quassus</div>
+        <p class="news-sub">Agora o Quassus SMP tem uma biblioteca onde a história de nosso servidor vai ser atualizada e contada.</p>
+        <p>No dia 18 de março de 2026 foi criada a <a href="https://quassus-studios.github.io/bibliotecaquasar/" target="_blank" rel="noopener" class="news-link">Biblioteca Quasar</a>. Este site tem o objetivo de atualizar a todos de acordo com o desenvolver da lore do Quassus. Quanto mais a lore do Quassus andar, mais livros explicando para quem não sabe vão ser adicionados.</p>
+        <a href="https://quassus-studios.github.io/bibliotecaquasar/" target="_blank" rel="noopener" class="news-btn">Acessar a Biblioteca Quasar</a>
+      </div>
     </div>
   </div>
 </div>
